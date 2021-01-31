@@ -1,0 +1,32 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "99 Names",
+  "version": "1.0",
+
+  // Recommended
+  "description": "Open each new tab with a beautiful name of Allah",
+  "icons": {
+  	"16": "./images/99_icon.png"},
+
+  // Pick one (or none)
+  "browser_action": {
+    "default_icon": "./images/99_icon.png",
+    "default_title": "99 Names"      
+  },
+
+
+ 
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+    
+  },
+  
+  "chrome_url_overrides": {
+  	"newtab": "newpage.html"
+  	},
+
+  "permissions": ["tabs"]
+
+}
